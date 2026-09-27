@@ -128,6 +128,10 @@
   .editing .wrap{padding-bottom:48vh}
   @media (min-width:960px){ .editing .wrap{padding-bottom:0} }
 
+  /* Hero eyebrow copy: bold (English only), and keep the closing line on one line */
+  #app[lang="en"] .it[data-id="i1"] .tx{font-weight:700}
+  .it[data-id="i8"] .tx{white-space:nowrap}
+
   /* ---------- Intro gate (envelope) ---------- */
   html.gate-lock,html.gate-lock body{overflow:hidden;height:100%}
   .gate{position:fixed;inset:0;z-index:100;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:24px;background:#EFE6D4;cursor:pointer;transition:opacity .55s ease;padding:20px;perspective:1000px}
