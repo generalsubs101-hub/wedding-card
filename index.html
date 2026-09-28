@@ -132,8 +132,11 @@
   .it[data-id="i1"] .tx,
   .it[data-id="i8"] .tx{font-weight:700}
   .it[data-id="i8"] .tx{white-space:nowrap;text-align:center}
-  /* Nudge the closing line + heart down toward the image edge, desktop only (mobile's hero is shorter and would clip) */
+  /* Nudge the closing line + heart down toward the image edge, desktop only. The hero section has a
+     baked-in min-height:720px with almost no spare room below the original content, so the extra
+     room has to be added explicitly or the nudged items get clipped by the section's overflow:hidden. */
   @media (min-width:900px){
+    .sec.glow{min-height:760px!important}
     .it[data-id="5yn7ir5"]{transform:translate(0px,225px)!important}
     .it[data-id="i8"]{transform:translate(-2px,218px)!important}
   }
